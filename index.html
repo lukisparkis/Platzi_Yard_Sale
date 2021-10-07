@@ -15,11 +15,24 @@
             --white: #FFFFFF;
         }
         body {
-            font-family: 'Quicksand', sans-serif;;
+            font-family: 'Quicksand', sans-serif;
         }
     </style>
 </head>
 <body>
-
+    <div class="login">
+        <div class="form-container">
+            <img src="" alt="logo" class="logo">
+            <h1 class="title">Create a new password</h1>
+            <p class="subtitle">Enter a new password for your account.</p>
+            <form action="/" class="form">
+                <label for="password" class="label">Password</label>
+                <input id="password" type="password" class="input input-password" placeholder="********">
+                <label for="re_enter_password" class="label">Re-enter password</label>
+                <input id="re_enter_password" type="password" class="input input-password" placeholder="********">
+                <input type="submit" value="Confirm" class="primary-button login-button">
+            </form>
+        </div>
+    </div>
 </body>
 </html>
