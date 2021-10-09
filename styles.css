@@ -21,7 +21,7 @@ body {
     place-items: center;
 }
 
-.form-container {
+.form-container, .form-container-account {
     display: grid;
     grid-template-rows: auto 1fr auto;
     width: 300px;
@@ -47,6 +47,11 @@ body {
     text-align: center;
 }
 
+.title-account {
+    margin-bottom: 40px;
+    text-align: start;
+}
+
 .subtitle {
     color: var(--very-light-pink);
     font-size: var(--md);
@@ -56,7 +61,7 @@ body {
     text-align: center;
 }
 
-.form {
+.form, .form-account {
     display: flex;
     flex-direction: column;
 }
@@ -67,6 +72,11 @@ body {
     text-align: center;
     text-decoration: none;
     margin-bottom: 52px;
+}
+
+.form-account div {
+    display: flex;
+    flex-direction: column;
 }
 
 .label {
@@ -87,6 +97,10 @@ body {
 
 .input-email {
     margin-bottom: 22px;
+}
+
+.input-name, .input-password, .input-email-address {
+    margin-bottom: 22px;;
 }
 
 .email-image {
@@ -142,6 +156,13 @@ body {
         width: 300px;
         bottom: 0;
         margin-bottom: 24px;
+    }
+    .form-container-account {
+        height: 100%;
+    }
+    .form-account {
+        height: 100%;
+        justify-content: space-between;
     }
 }
 
